@@ -195,7 +195,7 @@ li {
   margin-block-end: 16px;
 }
 .block-content__title--big {
-  font-size: 50px;
+  font-size: clamp(2.5rem, 2.2512rem + 1.2438vw, 3.125rem);
   letter-spacing: 1px;
   line-height: 1.32;
 }
@@ -313,7 +313,8 @@ li {
 /* ======== MAIN ======== */
 .hero {
   position: relative;
-  padding-block: calc(185px + var(--header-height)) 87px;
+  overflow-y: hidden;
+  padding-block: calc(clamp(1.25rem, -1.6964rem + 14.7321vw, 11.5625rem) + var(--header-height)) clamp(1.25rem, 0.0536rem + 5.9821vw, 5.4375rem);
 }
 .hero::before {
   content: "";
@@ -327,14 +328,14 @@ li {
 .hero__container {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px 10px;
   position: relative;
 }
 .hero__body {
   padding-block-start: 58px;
 }
 .hero__block-content:not(:last-child) {
-  margin-block-end: 69px;
+  margin-block-end: clamp(0.9375rem, -0.0268rem + 4.8214vw, 4.3125rem);
 }
 .hero__actions {
   display: flex;
@@ -344,7 +345,7 @@ li {
 }
 .actions-hero__button {
   padding-inline: 20px;
-  flex: 1 1 min(170px, 189px);
+  flex: 1 1 189px;
 }
 .hero__image {
   margin-inline-end: -173px;
@@ -361,11 +362,14 @@ li {
     content: "";
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     width: 100%;
     height: var(--header-height);
     background-color: #fff;
     z-index: 1;
+  }
+  body.lock .header__container::before {
+    transform: translate(-100%);
   }
   .header__menu {
     position: fixed;
@@ -374,12 +378,12 @@ li {
     width: 100%;
     height: 100%;
     row-gap: 14px;
-    column-gap: 0;
     flex-direction: column;
     justify-content: center;
     transition: transform var(--main-transition);
     overflow: scroll;
-    padding: calc(20px + var(--header-height)) 10px 20px 10px;
+    margin-block-start: var(--header-height);
+    padding: calc(20px + var(--header-height)) 10px;
     background-color: #fff;
     text-align: center;
   }
@@ -411,5 +415,23 @@ li {
   }
   .header__burger {
     display: none;
+  }
+}
+@media (max-width: 911.98px) {
+  .hero__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__body {
+    padding-block-start: 0;
+  }
+  .hero__block-content {
+    max-width: unset;
+  }
+  .hero__image {
+    margin-inline-end: 0;
+  }
+  .hero__block-content__title:not(:last-child) {
+    margin-block-end: 10px;
   }
 }
