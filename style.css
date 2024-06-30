@@ -351,7 +351,7 @@ li {
   padding-block-start: 0;
 }
 .hero__block-content:not(:last-child) {
-  margin-block-end: clamp(0.9375rem, -0.0268rem + 4.8214vw, 4.3125rem);
+  margin-block-end: clamp(1.25rem, 0.0311rem + 6.0945vw, 4.3125rem);
 }
 .hero__actions {
   display: flex;
@@ -364,7 +364,7 @@ li {
   flex: 1 1 189px;
 }
 .hero__image {
-  margin-inline-end: -171px;
+  margin-inline-end: -496px;
 }
 
 .advantages {
@@ -408,9 +408,6 @@ li {
   flex-direction: column-reverse;
   justify-content: space-between;
   gap: 16px 20px;
-}
-.intro__image {
-  align-self: flex-end;
 }
 .intro__block-content:not(:last-child) {
   margin-block-end: 16px;
@@ -586,7 +583,7 @@ li {
     z-index: 1;
   }
   .hero::before {
-    width: 140%;
+    width: 130%;
   }
   body.lock .header__container::before {
     transform: translate(-100%);
@@ -641,10 +638,10 @@ li {
     max-width: unset;
   }
   .hero::before {
-    width: 120%;
+    width: 124%;
   }
   .hero__image {
-    align-self: flex-end;
+    align-self: flex-start;
     margin-inline-end: -8px;
   }
   .hero__block-content__title:not(:last-child) {
@@ -655,7 +652,8 @@ li {
     align-items: unset;
   }
   .advantages__image {
-    align-self: flex-end;
+    align-self: flex-start;
+    width: 80%;
   }
   .card-advantages__title {
     font-size: 17px;
@@ -669,6 +667,10 @@ li {
 
   .intro__block-content {
     max-width: unset;
+  }
+  .intro__image {
+    align-self: flex-start;
+    width: 80%;
   }
 }
 @media (min-width: 912px) {
