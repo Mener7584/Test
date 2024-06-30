@@ -511,10 +511,23 @@ li {
 }
 .body-footer__menu__link {
   color: var(--color-footer-menu);
+  transition: color var(--main-transition), border var(--main-transition);
+  border-bottom: 2px solid transparent;
+}
+.body-footer__menu__link:hover,
+.body-footer__menu__link:focus {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 .body-footer__social {
   display: flex;
   gap: 10px 30px;
+}
+.social-footer__icon {
+  transition: var(--main-transition);
+}
+.social-footer__icon:hover {
+  color: var(--color-accent);
 }
 
 /* ======== MEDIA QUERY ======== */
