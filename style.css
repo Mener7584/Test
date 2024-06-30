@@ -429,9 +429,21 @@ li {
   position: absolute;
   top: 0;
   left: 0;
-  background: url(assets/image/price__background.svg) no-repeat;
+  background-color: #e7ecff;
+  opacity: 0.5;
   width: 100%;
   height: 100%;
+}
+.price::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: clamp(1.25rem, -0.74rem + 9.9502vw, 6.25rem);
+  background: #fff;
+  border-radius: 0 0 50% 50%;
 }
 .price__container {
   display: flex;
@@ -554,6 +566,9 @@ li {
   }
   .subfooter__button {
     min-width: 100%;
+  }
+  .price {
+    padding-block-start: 50px;
   }
 }
 @media (max-width: 767.98px) {
