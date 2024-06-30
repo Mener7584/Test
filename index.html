@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="landing page" />
-    <link rel="preload" href="assets/fonts/Roboto/Roboto-Regular.woff2" as="font" type="font/woff2" />
-    <link rel="preload" href="assets/fonts/Roboto/Roboto-Black.woff2" as="font" type="font/woff2" />
-    <link rel="preload" href="assets/fonts/Roboto/Roboto-Medium.woff2" as="font" type="font/woff2" />
+    <link rel="preload" href="assets/fonts/Roboto/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/Roboto/Roboto-Black.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/Roboto/Roboto-Medium.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="assets/image/hero-image.svg" as="image" type="image/svg+xml" />
     <link rel="preload" href="assets/image/hero-background.svg" as="image" type="image/svg+xml" />
     <style>
@@ -27,7 +27,7 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-          <menu class="header__menu menu-header">
+          <menu class="header__menu menu-header menu">
             <li class="menu-header__item"><a href="#" class="menu-header__link">Home</a></li>
             <li class="menu-header__item"><a href="#" class="menu-header__link">About</a></li>
             <li class="menu-header__item"><a href="#" class="menu-header__link">Contact</a></li>
@@ -91,11 +91,102 @@
                 </div>
               </div>
             </div>
-            <img src="assets/image/advantages__image.svg" loading="lazy" alt="" class="advantages__image" />
+            <img src="assets/image/advantages__image.svg" loading="lazy" width="540" height="525" alt="advantage image" class="advantages__image" />
+          </div>
+        </section>
+        <section class="intro">
+          <div class="intro__container">
+            <img src="assets/image/intro__image--1.svg" loading="lazy" width="480" height="317" alt="intro image" class="intro__image" />
+            <div class="intro__block-content block-content">
+              <h1 class="block-content__title">Light, Fast & Powerful</h1>
+              <div class="block-content__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                  magnis dis parturient montes, nascetur ridiculus
+                </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="intro">
+          <div class="intro__container">
+            <img src="assets/image/intro__image--2.svg" loading="lazy" width="480" height="317" alt="intro image" class="intro__image" />
+            <div class="intro__block-content block-content">
+              <h1 class="block-content__title">Light, Fast & Powerful</h1>
+              <div class="block-content__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                  magnis dis parturient montes, nascetur ridiculus
+                </p>
+                <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="intro">
+          <div class="intro__container">
+            <img src="assets/image/intro__image--3.svg" loading="lazy" width="480" height="317" alt="intro image" class="intro__image" />
+            <div class="intro__body">
+              <div class="intro__block-content block-content">
+                <h1 class="block-content__title">Light, Fast & Powerful</h1>
+                <div class="block-content__text">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus
+                  </p>
+                  <p>mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                </div>
+              </div>
+              <button class="intro__button button button" type="button">Purchase Now</button>
+            </div>
+          </div>
+        </section>
+        <section class="price">
+          <div class="price__container">
+            <div class="price__block-content block-content block-content--center">
+              <h1 class="block-content__title">A Price To Suit Everyone</h1>
+              <div class="block-content__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et
+                  magnis dis parturient montes, nascetur ridiculus
+                </p>
+              </div>
+            </div>
+            <div class="price__design design-price">
+              <h2 class="design-price__title block-content__title--big">$40</h2>
+              <p class="design-price__subtitle">UI Design Kit</p>
+            </div>
+            <div class="price__actions actions-price">
+              <h4 class="actions-price__title">See, One price. Simple.</h4>
+              <button class="actions-price__button button">Purchase Now</button>
+            </div>
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__subfooter subfooter">
+            <p class="subfooter__company">©2023 Yourcompany</p>
+            <a href="index.html" class="subfooter__logo header__logo">Landing</a>
+            <button class="subfooter__button button button__small">Purchase now</button>
+          </div>
+          <div class="footer__body body-footer">
+            <menu class="body-footer__menu menu">
+              <li class=""><a href="#" class="body-footer__menu__link menu__link">Home</a></li>
+              <li class=""><a href="#" class="body-footer__menu__link menu__link">About</a></li>
+              <li class=""><a href="#" class="body-footer__menu__link menu__link">Contact</a></li>
+            </menu>
+            <div class="body-footer__social">
+              <div class="icon-facebook"></div>
+              <div class="icon-linkedin"></div>
+              <div class="icon-twitter"></div>
+              <div class="icon-youtube"></div>
+              <div class="icon-instagram"></div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
